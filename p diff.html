@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>para tag diff</title>
+
+<style>
+p.para1 {
+  color: blue;
+}
+
+p#para1 {
+  color: red;
+}
+
+#para1 p {
+  color: green;
+}
+</style>
+</head>
+
+<body>
+
+<h2>p.para1</h2>
+<p class="para1">
+  This paragraph has class="para1
+</p>
+
+<hr>
+
+<h2>p#para1</h2>
+<p id="para1">
+  This paragraph has id="para1"
+</p>
+
+<hr>
+
+<h2>#para1 p</h2>
+<div id="para1">
+  <p>
+    This paragraph is inside an element with id="para1"
+  </p>
+</div>
+
+</body>
+</html>
